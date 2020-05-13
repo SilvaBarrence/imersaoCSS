@@ -1,13 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('https://images3.alphacoders.com/741/thumb-1920-74165.jpg');
+    background-image: url('../img/background.jpg');
     background-size: auto 100vh;
     font-family:'Cormorant Garamond', serif;
+    height: 100vh;  
+    font-size: 12px; 
+}
+
+@media (min-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+header {
     height: 100vh;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu {
-    background-color: rgb(94, 73, 57, 0.5);
+    background-color: rgb(207, 204, 204, 0.5);
+    position: fixed;
+    width: 100vw;
+    top: 0;
 }
 
 .menu ul {
@@ -19,6 +47,11 @@ body {
 .menu li {
     list-style: none;
     font-size: 20px;
+}
+
+.menu a {
+   display: block;
+   padding: 10px 20px;
 }
 
 a {
@@ -36,26 +69,26 @@ a:hover {
     text-align: center;
 }
 
+.first-title {
+    font-size: 4em;
+}
+
 .second-title {
     font-style: italic;
 }
 
-.desfoque {
-    border: solid;
-    border-color: #F5F5DC;
-    display: flex;
-    flex-flow: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 50px;
-    filter: blur(1px);
-    text-align: center;
-    background-color:#F5DEB3;
-    margin-left: 615px;
+.img-portfolio {
+    width: 200px;
+    height: 180px;
 }
 
-img {
-    margin-left: 550px;
-    filter: blur(3px);
+section h2 {
+    display: flex;
+    justify-content: center;
+    color: seashell;
+    font-style: italic;
+}
+
+figcaption {
+    color: seashell;
 }
