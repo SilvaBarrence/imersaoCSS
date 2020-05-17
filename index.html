@@ -6,43 +6,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silva Barrence</title>
     <link rel="stylesheet" href="./styles-CSS/style.css">
+    <script src="https://kit.fontawesome.com/0f8fc8637e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Jost&family=Libre+Baskerville&family=Orbitron:wght@500&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <nav>
+        <div class="toggle">
+            <i class="fas fa-bars mn"></i>
+        </div>
+        <ul class="container navbar">
+            <li><a href="#inicial-sobre">Sobre</a></li>
+            <li><a href="#xps">Experiência</a></li>
+            <li><a href="#agra">Agradecimento</a></li>
+            <li><a href="#ctt">Contato</a></li>
+        </ul>
+    </nav>
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Portifólio</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
         <div>
-            <h1 class="first-title">Seja bem vindo(a)!</h1>
-            <h2 class="second-title">Aulas CSS</h2>
+            <h1 class="first-title">Gabriel de S. Silva Barrence</h1>
+            <h2 class="second-title">Currículo Web</h2>
         </div>
     </header>
-    <section class="sobre">
-        <hr>
+    <hr id="inicial-sobre">
+    <section class="sobre container">
         <h2>Sobre</h2>
         <div class="grid">
-            <figure>
-                <img class="img-sobre" src="./img/qualityassurancee.jpg" alt="QA">
-                <figcaption>Jr Software Test Enginner</figcaption>
+            <figure class="avatar">
+                <img class="img-sobre" src="./img/Gabriel.jpg" alt="Autor">
             </figure>
-            <figure>
-                <img class="img-sobre" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-                <figcaption>QA Mobile</figcaption>
-            </figure>
-            <figure>
-                <img class="img-sobre" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web">
-                <figcaption>QA Web</figcaption>
-            </figure>
+            <div class="txtSobre">
+                <p>Sou formado em Engenharia da Computação pela Universidade São Judas Tadeu e
+                    busco expandir meus conhecimentos em TI, Engenharia da Computação e estou aberto a conhecer a área
+                    da
+                    tecnologia em geral, porquanto tenho sede de aprendizado.
+                </p>
+                <p>
+                    Atualmente, trabalho como Analista de testes júnior no departamento de Quality Testing Services da
+                    empresa InMetrics.
+                    Já atuei nos projetos dos clientes Cielo, Banco Safra e Banco Santander - onde estou no momento -,
+                    realizando modelagem de cenário de teste para a sprint e regressivo em plataformas web e mobile
+                    (Android e iOS),
+                    execução dos casos de testes em ambiente de homologação e TI,
+                    criação de dados para a realização dos casos de testes, controle de execução,
+                    tempo e armazenamento de evidências nas plataformas Jira, confluence e HP-ALM.
+                </p>
+                <p>Data de nascimento: 29/05/1995</p>
+                <p>Estado civil: Casado</p>
+            </div>
         </div>
     </section>
+    <hr id="xps">
+    <section class="xp container">
+        <h2>Experiência Profissional</h2>
+        <div class="grid">
+            <div>
+                <h3>ENGENHEIRO DE TESTES DE SOFTWARE JR</h3>
+                <h4>Inmetrics S/A | Ago/2019- o momento</h4>
+
+                <p>Atuação em modelagem de cenário de teste para
+                    a sprint e regressivo em plataformas web e
+                    mobile (Android e iOS). Execução dos casos de
+                    testes em ambiente de homologação e TI,
+                    criação de dados para a realização dos casos de
+                    testes. Controle de execução, tempo e
+                    armazenamento de evidências nas plataformas
+                    Jira, confluence e HP-ALM.</p>
+            </div>
+            <div>
+                <h3>TESTER - QUALITY TESTING SERVICES</h3>
+                <h4>Inmetrics S/A |Jul/2018 - ago/2019</h4>
+
+                <p>Atuação em modelagem de cenário de teste
+                    para a sprint e regressivo em plataformas web e
+                    mobile. Execução dos casos de testes em
+                    ambiente de homologação e TI, criação de dados
+                    para a realização dos casos de testes.</p>
+            </div>
+            <div>
+                <h3>ESTAGIÁRIO</h3>
+                <h4>Diretoria de Ensino de Osasco| Set/2014 - Jul/2016</h4>
+
+                <p>Atuação no suporte de informática, onde
+                    realizava monitoramento de vídeo conferência,
+                    atendimento ao público, preparação de
+                    ambiente e atualização de software.</p>
+            </div>
+        </div>
+    </section>
+    <hr id="agra">
+    <section class="agradecimento container">
+        <h2>Agradecimentos</h2>
+        <div class="quadro">
+            <div>
+                <p>"Aproveitando as aulas da <a href="https://www.alura.com.br/imersao-css">Imerssão CSS da Alura</a>
+                    criei este site, no formato currículo web, no intuito de treinar o CSS.
+                </p>
+                <p>Agradeço a <a href="https://www.alura.com.br/">Alura</a> e a <a
+                        href="https://www.caelum.com.br/">Caelum</a> pela oportunidade
+                    e a disponibilidade deste curso gratuito e online proposto pelo Paulo Silveira.
+                </p>
+                <p>Agradeço também as professoras Vanessa Tonini e Juliana Amoasei, que de forma divertida e didática
+                    apresentaram as aulas deixando assim o conteúdo mais claro de se aprender."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr id="ctt" class="ultimoContainer">
+    <section class="contato container">
+        <h2>Contatos</h2>
+        <div class="icons">
+            <div>
+                <a target="_bank" href="https://github.com/SilvaBarrence">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div>
+                <a target="_bank" href="https://www.linkedin.com/in/gabriel-de-souza-silva-barrence/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.mn').click(function () {
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
+    <span class="back-to-top">
+        <i class="fas fa-arrow-circle-up"></i>
+    </span>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.back-to-top').hide();
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 0) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+
+            $('.back-to-top').click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        $('.navbar a').click(function (e) {
+            var linkHref = $(this).attr("href");
+            var idElement = linkHref.substr(linkHref.indexOf("#"));
+            $('html, body').animate({
+                scrollTop: $(idElement).offset().top
+            }, 1000);
+            return false;
+        });
+    </script>
 </body>
 
 </html>
